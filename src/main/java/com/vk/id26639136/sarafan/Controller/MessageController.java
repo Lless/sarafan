@@ -11,7 +11,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("message")
 public class MessageController {
-    private int counter = 4;
+    private int counter = 5;
 
     private List<Map<String, String>> messages = new ArrayList<Map<String, String>>() {{
         add(new HashMap<String, String>() {{
