@@ -28,6 +28,7 @@ public class MessageController {
     }
 
     @GetMapping("{id}")
+    @JsonView(Views.FullMessage.class)
     public Message getOne(@PathVariable("id") Message message) {
         return message;
     }
@@ -39,7 +40,10 @@ public class MessageController {
     }
 
     @PutMapping("{id}")
-    public Message update(@PathVariable("id") Message messageFromDb, @RequestBody Message message) {
+    public Message update(
+            @PathVariable("id") Message messageFromDb,
+            @RequestBody Message message
+    ) {
         BeanUtils.copyProperties(message, messageFromDb, "id");
 
         return messageRepo.save(messageFromDb);

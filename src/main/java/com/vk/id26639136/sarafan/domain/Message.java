@@ -10,14 +10,13 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table
-@ToString(of ={"id", "text"})
+@ToString(of = {"id", "text"})
 @EqualsAndHashCode(of = {"id"})
 public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @JsonView(Views.IdName.class)
-    private long id;
-
+    private Long id;
     @JsonView(Views.IdName.class)
     private String text;
 
@@ -26,11 +25,11 @@ public class Message {
     @JsonView(Views.FullMessage.class)
     private LocalDateTime creationDate;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
