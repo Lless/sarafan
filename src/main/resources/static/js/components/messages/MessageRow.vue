@@ -10,15 +10,15 @@
 
 <script>
     export default {
-    props: ['message', 'editMessage', 'deleteMessage', 'messages'],
-    methods: {
-        edit() {
-            this.editMessage(this.message)
-        },
-        del() {
-            this.deleteMessage(this.message)
+        props: ['message', 'editMessage', 'deleteMessage', 'messages'],
+        methods: {
+            edit() {
+                this.editMessage(this.message)
+            },
+            del() {
+                this.deleteMessage(this.message)
+            }
         }
-    }
     }
 </script>
 
