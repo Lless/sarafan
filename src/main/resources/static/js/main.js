@@ -3,8 +3,9 @@ import App from 'pages/app.vue'
 import VueResource from 'vue-resource'
 import { connect } from './util/ws'
 
-connect()
-
+if (frontendData.profile) {
+    connect()
+}
 Vue.use(VueResource)
 
 new Vue({
