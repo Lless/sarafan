@@ -1,4 +1,4 @@
-package com.vk.id26639136.sarafan.Exceptions;
+package com.vk.id26639136.sarafan.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

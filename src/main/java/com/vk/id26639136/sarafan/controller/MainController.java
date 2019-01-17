@@ -1,4 +1,4 @@
-package com.vk.id26639136.sarafan.Controller;
+package com.vk.id26639136.sarafan.controller;
 
 import com.vk.id26639136.sarafan.domain.User;
 import com.vk.id26639136.sarafan.repo.MessageRepo;
